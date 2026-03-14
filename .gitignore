@@ -35,13 +35,15 @@ desktop.ini
 *.tmp
 *.bak
 *.orig
-firmware/MDK-ARM/*.uvguix*
-firmware/MDK-ARM/*.axf
-firmware/MDK-ARM/*.hex
-firmware/MDK-ARM/*.map
-firmware/MDK-ARM/*.o
-firmware/MDK-ARM/*.d
-firmware/MDK-ARM/*.dep
-firmware/MDK-ARM/*.htm
+# Keil MDK generated files
+firmware/MDK-ARM/
+firmware/MDK-ARM/**/*.axf
+firmware/MDK-ARM/**/*.hex
+firmware/MDK-ARM/**/*.map
 firmware/MDK-ARM/**/*.o
 firmware/MDK-ARM/**/*.d
+firmware/MDK-ARM/**/*.crf
+firmware/MDK-ARM/**/*.dep
+firmware/MDK-ARM/**/*.htm
+firmware/MDK-ARM/**/*.build_log.htm
+firmware/MDK-ARM/**/*.uvguix*
