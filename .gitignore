@@ -35,3 +35,13 @@ desktop.ini
 *.tmp
 *.bak
 *.orig
+firmware/MDK-ARM/*.uvguix*
+firmware/MDK-ARM/*.axf
+firmware/MDK-ARM/*.hex
+firmware/MDK-ARM/*.map
+firmware/MDK-ARM/*.o
+firmware/MDK-ARM/*.d
+firmware/MDK-ARM/*.dep
+firmware/MDK-ARM/*.htm
+firmware/MDK-ARM/**/*.o
+firmware/MDK-ARM/**/*.d

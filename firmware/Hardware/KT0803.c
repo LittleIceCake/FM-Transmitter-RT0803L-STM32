@@ -4,10 +4,7 @@
 extern I2C_HandleTypeDef hi2c2;
 
 static HAL_StatusTypeDef KT0803L_WriteREG(uint8_t dat,uint8_t addr) {
-//    uint8_t data[2];
-//    data[0] = 0x02;       // 写命令
-//    data[1] = wiper_value;  // 设置游标值
-    
+
     HAL_StatusTypeDef status = HAL_I2C_Mem_Write(&hi2c2, KT0803L_I2C_ADDRESS,addr,I2C_MEMADD_SIZE_8BIT,&dat, 1, HAL_MAX_DELAY);
     return status;
 }

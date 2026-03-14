@@ -102,9 +102,8 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  printf("start\n");
   
-  //	// Initialize AD511x
+  // Initialize AD511x
     if (AD511x_Init() != HAL_OK) {
         printf("Failed to initialize AD511x!\n");
         Error_Handler();
@@ -119,7 +118,7 @@ int main(void)
     AD511x_ReadWiper(&target_value);
 
     printf("Wiper value %d saved to EEPROM successfully.\n", target_value);
-  KT0803L_FREQ_SET(93.0f);
+    KT0803L_FREQ_SET(93.0f);
 
   while (1)
   {
